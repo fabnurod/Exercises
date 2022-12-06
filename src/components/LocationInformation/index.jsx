@@ -14,28 +14,30 @@ const LocationInformation = (props) => {
   blog = blog || 'No available';
 
   return (
-    <Grid container>
+    <Grid container spacing={2} sx={{ marginTop: '15px' }}>
       <Grid item xs={3}>
-        <Stack>
+        <Stack direction="row" spacing={2}>
           <LocationOnIcon />
           <Typography>{location}</Typography>
         </Stack>
       </Grid>
 
       <Grid item xs={3}>
-        <Stack>
+        <Stack direction="row" spacing={2}>
           <TwitterIcon />
           <Typography>{twitter_username}</Typography>
         </Stack>
       </Grid>
+
       <Grid item xs={3}>
-        <Stack>
+        <Stack direction="row" spacing={2}>
           <LanguajeIcon />
           <Typography>{blog}</Typography>
         </Stack>
       </Grid>
+
       <Grid item xs={3}>
-        <Stack>
+        <Stack direction="row" spacing={2}>
           <BusinessIcon />
           <Typography>{company}</Typography>
         </Stack>

@@ -13,8 +13,8 @@ export const Description = (props) => {
 
   return (
     <>
-      <Stack>
-        <Typography>{bio}</Typography>
+      <Stack sx={{ justifyContent: 'center' }}>
+        <Typography variant="body1">{bio}</Typography>
       </Stack>
       <PaperInformation userState={userState} />
       <LocationInformation userState={userState} />
